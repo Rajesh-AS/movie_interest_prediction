@@ -22,3 +22,9 @@ with open("movie_interest_model.pkl", "wb") as f:
     pickle.dump(model, f)
 
 print("✅ Model trained and pickle file saved")
+import os
+import pickle
+
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+MODEL_PATH = os.path.join(BASE_DIR, "movie_model.pkl")
+
